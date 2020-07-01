@@ -1,0 +1,442 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(../fonts/HelveticaNeue.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: HelveticaNeue;
+}
+html {
+    background: url('../img/food_background.jpg') no-repeat center center fixed;
+}
+h1 {
+    width: 100px;
+    height: 50px;
+    background: url('../img/logo.png') top left no-repeat;
+    text-indent: -9999px;
+    background-size: cover;
+    color: #fff;
+    background-color: #263238;
+}
+.red_border {
+    border: 1px solid #f31413 !important;
+    border-radius: 3px;
+}
+
+/*Header Stranica*/
+.header_holder {
+    width: 100%;
+    background-color: #263238;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.header_holder a {
+    color: #fff;
+    text-decoration: none;
+}
+.header_holder .login_logout_button {
+    font-size: 18px;
+    padding: 5px 15px;
+}
+.header_holder .login_logout_button:hover {
+    background-color: rgba(0,0,0,0.1);
+    color: #23527c;
+}
+@media screen and (max-width: 200px) {
+    .header_holder {
+        flex-direction: column;
+    }
+    .header_holder .login_logout_button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/*404 i Teacher Stranice*/
+.fourofour, .teacher_panel {
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fourofour .lost_text, .teacher_panel .teacher_text {
+    text-align: center;
+}
+.fourofour .lost_text h2, .teacher_panel .teacher_text h2 {
+    font-size: 30px;
+}
+.fourofour .lost_text a, .teacher_panel .teacher_text a {
+    color: #000;
+    text-decoration: none;
+}
+.fourofour .lost_text a:hover, .teacher_panel .teacher_text a:hover {
+    text-decoration: underline;
+}
+.fourofour img, .teacher_panel img {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 260px;
+}
+.teacher_panel img {
+    max-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.teacher_panel .teacher_text div {
+    margin-top: 15px;
+}
+.teacher_panel .teacher_text div a span {
+    font-size: 40px;
+}
+.teacher_panel .teacher_text div a span:hover {
+    color: #999;
+}
+@media screen and (max-width: 700px) {
+    .fourofour, .teacher_panel {
+        flex-direction: column;
+    }
+    .fourofour .lost_text, .teacher_panel .teacher_text {
+        margin-top: 30px;
+    }
+    .teacher_panel img {
+        margin-bottom: 0;
+    }
+}
+
+/* Login i Register Stranice */
+#login_error, #register_error {
+    width: 90%;
+    margin-left: 5%;
+    color: #a94442;
+    background-color: #f2dede;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-color: #ebccd1;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.login_panel, .register_panel {
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.login_panel form, .register_panel form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.login_panel input, .register_panel input {
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    background-color: transparent;
+    font-size: 18px;
+}
+.login_panel input:focus, .register_panel input:focus {
+    outline: none;
+    border-bottom: 2px solid #9e9e9e;
+}
+.login_panel button, .register_panel button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #26a69a;
+    font-size: 18px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 3px;
+}
+.login_panel button:focus, .register_panel button:focus {
+    background-color: #1d7d74;
+    border-color: #122b40;
+}
+.login_panel button:hover, .register_panel button:hover {
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    background-color: #2bbbad;
+}
+.login_panel a, .register_panel a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.login_panel a:hover, .register_panel a:hover {
+    text-decoration: underline;
+}
+
+/* Main Stranica */
+#welcome_sign {
+    width: 90%;
+    margin-left: 5%;
+    color: #31708f;
+    background-color: #d9edf7;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-color: #bce8f1;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.main_panel {
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.main_panel h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main_panel table {
+    width: 100%;
+    table-layout: fixed;
+}
+.main_panel table button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+.main_panel table input, .main_panel table select {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #fff;
+}
+.main_panel table a {
+    color: #fff;
+}
+.main_panel table select option {
+    color: #000;
+}
+.main_panel table input:focus, .main_panel table select:focus {
+    outline: none;
+}
+.main_panel table input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+.main_panel.not_first {
+    margin-top: 50px;
+}
+.main_panel table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+.main_panel table tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+.main_panel table tr:first-child {
+    background-color: transparent;
+    color: #000;
+}
+.main_panel table tr:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.main_panel table tr:first-child:hover {
+    background-color: transparent;
+}
+.main_panel table tr th {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    box-shadow: 2px 2px 3px #888;
+}
+.main_panel table tr td {
+    text-align: center;
+}
+.main_panel table tr th, .main_panel table tr td {
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.main_panel table tr th:nth-child(1), .main_panel table tr th:nth-child(3), .main_panel table tr th:nth-child(4),
+.main_panel table tr th:nth-child(6), .main_panel table tr th:nth-child(7), .main_panel table tr td:nth-child(1),
+.main_panel table tr td:nth-child(3), .main_panel table tr td:nth-child(4), .main_panel table tr td:nth-child(6),
+.main_panel table tr td:nth-child(7) {
+    width: 10%;
+}
+.main_panel table tr th:nth-child(2), .main_panel table tr td:nth-child(2) {
+    width: 30%;
+}
+.main_panel table tr th:nth-child(5), .main_panel table tr td:nth-child(5) {
+    width: 20%;
+}
+.your_shops table tr th:nth-child(1), .your_shops table tr th:nth-child(3), .your_shops table tr th:nth-child(4),
+.your_shops table tr td:nth-child(1), .your_shops table tr td:nth-child(3), .your_shops table tr td:nth-child(4) {
+    width: 10%;
+}
+.your_shops table tr th:nth-child(2), .your_shops table tr td:nth-child(2) {
+    width: 70%;
+}
+@media screen and (max-width: 500px) {
+    .main_panel table tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        overflow: hidden;
+    }
+    .main_panel table tr td {
+        display: table-row;
+    }
+    .main_panel table tr th {
+        display: none;
+    }
+}
+
+/*Admin Stranica*/
+.admin_panel {
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.admin_panel .admin_item {
+    margin-top: 70px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 2px 3px #888;
+    padding-bottom: 15px;
+}
+.admin_panel .admin_item form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.admin_panel .admin_item input, .admin_panel .admin_item select {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    background-color: transparent;
+    font-size: 18px;
+}
+.admin_panel .admin_item form select {
+    margin-bottom: 5px;
+}
+.admin_panel .admin_item input:focus, .admin_panel .admin_item select:focus {
+    outline: none;
+    border-bottom: 2px solid #9e9e9e;
+}
+.admin_panel .admin_item button {
+    padding: 10px 25px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #26a69a;
+    font-size: 18px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 3px;
+}
+.admin_panel .admin_item button:focus {
+    background-color: #1d7d74;
+    border-color: #122b40;
+}
+.admin_panel .admin_item button:hover {
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    background-color: #2bbbad;
+}
+.admin_panel .admin_item.with_more {
+    flex-direction: column;
+}
+.admin_panel .admin_item .more_admin_options {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width: 300px) {
+    .admin_panel, .admin_item, .admin_panel .admin_item .more_admin_options, .admin_panel .admin_item form {
+        flex-direction: column;
+    }
+    .admin_panel, .admin_item input {
+        width: 90%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/*Footer Stranica*/
+.footer_panel {
+    width: 100%;
+}
+.footer_panel p {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+}
+.footer_panel p a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.footer_panel p a:hover {
+    text-decoration: underline;
+}
+.footer_panel .site_links {
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_panel .site_links h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.footer_panel .site_links ul {
+    list-style-type: none;
+}
+.footer_panel .site_links ul li {
+    margin-bottom: 7px;
+}
+.footer_panel .site_links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.footer_panel .site_links ul li a:hover {
+    text-decoration: underline;
+}

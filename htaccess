@@ -1,0 +1,4 @@
+ErrorDocument 404 https://shopedia-belgrade.000webhostapp.com/index.php?page=404
+
+ErrorDocument 403 https://shopedia-belgrade.000webhostapp.com/index.php?page=404
+Options All -Indexes
